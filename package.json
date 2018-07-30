@@ -1,0 +1,23 @@
+{
+  "name": "connect-platform-package-boilerplate",
+  "version": "1.0.0",
+  "description": "the boilerplate project for CONNECT platform packages.",
+  "main": ".",
+  "scripts": {
+    "start": "node app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loreanvictor/connect-platform-package-boilerplate.git"
+  },
+  "author": "Eugene Ghanizadeh Khoub <ghanizadeh.eugene@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/loreanvictor/connect-platform-package-boilerplate/issues"
+  },
+  "homepage": "https://github.com/loreanvictor/connect-platform-package-boilerplate#readme",
+  "dependencies": {
+    "connect-platform": "^0.2.2"
+  }
+}

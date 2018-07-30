@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/loreanvictor/connect-platform-package-boilerplate#readme",
   "dependencies": {
-    "connect-platform": "^0.2.2"
+    "connect-platform": "^0.2.4"
   }
 }

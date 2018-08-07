@@ -5,7 +5,7 @@ Mongodb binding for connect platform
 ```
 platform.configure({
   "mongo-db":{
-    URL: mongodb://localhost:27017/,
+    URL: 'mongodb://localhost:27017/',
     db: 'test'
   }
 })

@@ -54,6 +54,12 @@ platform
         '.',
       ]
     }
+  })
+  .configure({
+      "mongo-db": {
+          URL: "mongodb+srv://ali:lQ2FXUg3qcrHBAq0@cluster0-hox4e.gcp.mongodb.net/test?retryWrites=true",
+          db: 'shahrzaad'
+      }
   });
 
 /**

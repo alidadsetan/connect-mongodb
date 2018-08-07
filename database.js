@@ -1,5 +1,5 @@
 const { MongoClient } = require('mongodb');
-const platform = require('../../');
+const platform = require('connect-platform');
 
 
 class DBNotAvailable extends Error {

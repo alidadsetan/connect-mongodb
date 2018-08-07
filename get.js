@@ -1,4 +1,4 @@
-const platform = require('../../');
+const platform = require('connect-platform');
 let db = require('./database');
 const { ObjectID } = require('mongodb');
 

@@ -1,5 +1,5 @@
 {
-  "name": "connect-mongodb",
+  "name": "connected-mongodb",
   "version": "1.0.0",
   "description": "mongodb package for connect platform",
   "main": ".",

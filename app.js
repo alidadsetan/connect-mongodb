@@ -55,12 +55,26 @@ platform
       ]
     }
   })
-  .configure({
-      "mongo-db": {
-          URL: "mongodb+srv://ali:lQ2FXUg3qcrHBAq0@cluster0-hox4e.gcp.mongodb.net/test?retryWrites=true",
-          db: 'shahrzaad'
+//   .configure({
+//       "mongo-db": {
+//           URL: "mongodb+srv://ali:lQ2FXUg3qcrHBAq0@cluster0-hox4e.gcp.mongodb.net/test?retryWrites=true",
+//           db: 'shahrzaad'
+//       }
+//   });
+    // .configure({
+    //     "mongo-db": {
+    //         user: 'connected',
+    //         password: process.env.DB_PASSWORD,
+    //         port: 17362,
+    //         db: 'connect-test',
+    //         url: 'ds117362.mlab.com'
+    //     }
+    // })
+    .configure({
+      "mongo-db":{
+        dburl: 'mongodb://connected:m12345@ds117362.mlab.com:17362/connect-test',
       }
-  });
+    })
 
 /**
  *

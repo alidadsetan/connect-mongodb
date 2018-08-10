@@ -10,16 +10,31 @@ class DBNotAvailable extends Error {
 
 let config = platform.config.get('mongo-db', {});
 let instance = undefined;
-
-if (config.URL && config.db) {
-  MongoClient.connect(config.URL, (err, client) => {
-    if (err) {
-      console.log('mongo db connect error', err)
-    } else {
-      instance = client.db(config.db)
-    }
-  });
+let url;
+if (config.dburl) {
+  if (config.db) {
+    url = config.dburl + '/' + config.db
+  } else {
+    url = config.dburl;
+  }
+} else {
+  url = 'mongodb://'
+  if (config.user) {
+    url += `${config.user}:${config.password}@`
+  }
+  url += config.url;
+  if (config.port) {
+    url += `:${config.port}`;
+  }
 }
+
+MongoClient.connect(url, (err, client) => {
+  if (err) {
+    console.log('mongo db connect error', err)
+  } else {
+    instance = client.db(config.db)
+  }
+});
 
 module.exports = {
   get connected() {

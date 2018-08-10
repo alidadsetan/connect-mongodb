@@ -63,3 +63,5 @@ typings/
 # connect platform files
 /secure
 /panel-generated
+Dockerfile
+docker-compose.yml
